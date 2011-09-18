@@ -1,11 +1,9 @@
 def rational_make(n, d):
     return (n, d)
 
-def numer(x):
-    return x[0]
+def numer(x): return x[0]
 
-def denom(x):
-    return x[1]
+def denom(x): return x[1]
 
 def rational_add(x, y):
     return rational_make(numer(x) * denom(y) + numer(y) * denom(x),
@@ -13,6 +11,7 @@ def rational_add(x, y):
 
 def rational_repr(x):
     return "{}/{}".format(numer(x), denom(x))
+
 
 if __name__ == '__main__':
 
