@@ -17,6 +17,6 @@ Resources
 
 *Have fun!*
 
-Ofer Koren
-Eli Golovinsky
-Gavrie Philipson
+Ofer Koren<br>
+Eli Golovinsky<br>
+Gavrie Philipson<br>
