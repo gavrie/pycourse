@@ -14,6 +14,23 @@ Resources
 * Python Challenge: http://www.pythonchallenge.com/
 * Python Documentation: http://docs.python.org/
 
+Tab Completion
+--------------
+
+<pre>
+gavriep@gavriep-mac: ~$ cat ~/.pythonrc.py 
+try:
+    import readline
+except ImportError:
+    print("Module readline not available.")
+else:
+    import rlcompleter
+    readline.parse_and_bind("tab: complete")
+gavriep@gavriep-mac: ~$ echo $PYTHONSTARTUP 
+/Users/gavriep/.pythonrc.py
+gavriep@gavriep-mac: ~$ 
+</pre>
+
 
 *Have fun!*
 
