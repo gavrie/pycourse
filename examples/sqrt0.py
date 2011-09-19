@@ -10,10 +10,14 @@ def good_enough(guess, x):
 def improve(guess, x):
     return average(guess, x / guess)
 
-def sqrt(x, guess=1.0):
+def sqrt_iter(guess, x):
     while not good_enough(guess, x):
         guess = improve(guess, x)
     return guess 
+
+def sqrt(x):
+    return sqrt_iter(1.0, x)
+
 
 if __name__ == '__main__':
     print sqrt(9.0)
