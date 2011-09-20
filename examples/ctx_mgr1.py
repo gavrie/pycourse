@@ -13,6 +13,7 @@ class MyManager(object):
     
     def __exit__(self, *args):
         print "exited with: ", args
+        return True
 
 
 if __name__ == "__main__":
@@ -20,4 +21,8 @@ if __name__ == "__main__":
     mgr = MyManager()
     with mgr as obj:
         print obj
+
+
+
+
 
