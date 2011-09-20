@@ -1,6 +1,7 @@
 import os
 from time import sleep, time
 from random import random
+from functools import partial
 
 class TimeoutException(Exception): pass
 
@@ -19,15 +20,11 @@ def iter_wait(predicates, timeout=None, sleep_time = 1.0):
             raise TimeoutException("Did not meet all predicates within timeout ({})".format(timeout))
 
         # check the predicates
-        remaining_predicates = []
-        for pred in predicates:
-            if not pred():
-                remaining_predicates.append(pred)
-        if not remaining_predicates:
+        predicates = [pred for pred in predicates if not pred()]
+        if not predicates:
             return
         
         # prepare for next iteration
-        predicates = remaining_predicates
         iterations += 1
         
         # yield the generator
@@ -36,11 +33,9 @@ def iter_wait(predicates, timeout=None, sleep_time = 1.0):
         sleep(sleep_time)
 
 
-# this is like 'functools.partial'
+
 def get_file_exists_predicate(fn):
-    def pred():
-        return os.path.isfile(fn)
-    return pred
+    return partial(os.path.isfile, fn) 
 
 def maybe_create_file(fn):
     r = random()

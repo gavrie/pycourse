@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+tests/junk/*
+*.pyc
+*.swp
+*.swo
+.DS_Store
+tmp/*
+docs/build
+.pydevproject
+.settings
+tags
+cscope.out
+pycscope.files
+.coverage
