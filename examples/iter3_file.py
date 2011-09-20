@@ -14,6 +14,16 @@ def iter_file():
         print ">>", line,
     else:
         print "Empty!"
+    
+    it = iter(f)
+    while True:
+        try:
+            line = it.next()
+        except StopIteration:
+            break
+        else:
+            print ">>", line,
+        
 
 if __name__ == '__main__':
     iter_file()

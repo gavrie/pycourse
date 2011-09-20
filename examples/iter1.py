@@ -7,7 +7,7 @@ def main():
     while True:
         try:
             item = it.next()
-        except StopIteration:
+        except Exception as e:
             break
         else:
             print item
