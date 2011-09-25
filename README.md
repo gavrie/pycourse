@@ -13,6 +13,8 @@ Resources
 
 * Python Challenge: http://www.pythonchallenge.com/
 * Python Documentation: http://docs.python.org/
+* Python Package Index (PyPI): http://pypi.python.org/pypi
+* Python static analysis tools: pyflakes (simple), pylint, pychecker
 
 Tab Completion
 --------------
