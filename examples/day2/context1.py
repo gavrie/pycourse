@@ -1,9 +1,9 @@
 class Connection(object):
     def __init__(self):
-        print "Creating connection"
+        print "Connection: Creating"
 
     def close(self):
-        print "Closing connection"
+        print "Connection: Closing"
 
 
 class Closing(object):
@@ -11,15 +11,15 @@ class Closing(object):
         self.x = x
 
     def __enter__(self):
-        print "Start"
+        print ">> Entering context"
 
     def __exit__(self, *args):
+        print ">> Leaving context"
         self.x.close()
-        print "Done"
 
 
 with Closing(Connection()) as myconn:
-    print "In context"
+    print "Inside context"
     myconn
     
 

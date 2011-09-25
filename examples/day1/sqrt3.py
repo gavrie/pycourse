@@ -4,6 +4,7 @@ def square(x):
 def average(x, y):
     return (x + y) / 2
 
+" lexical scoping"
 
 def sqrt(x):
 

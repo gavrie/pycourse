@@ -1,28 +1,17 @@
-
-
-
-
-class MyManager(object):
+class MyContext(object):
     
     def __init__(self):
-        print "initialized"
+        print ">> initialized"
     
     def __enter__(self):
-        print "entered"
+        print ">> entered"
         return "something"
     
     def __exit__(self, *args):
-        print "exited with: ", args
+        print ">> exited with: ", args
         return True
 
 
 if __name__ == "__main__":
-    
-    mgr = MyManager()
-    with mgr as obj:
+    with MyContext() as obj:
         print obj
-
-
-
-
-

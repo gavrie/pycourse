@@ -1,4 +1,5 @@
 def square(x):
+    "return the square of x"
     return x * x
 
 def average(x, y):

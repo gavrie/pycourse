@@ -6,11 +6,7 @@ class Rational(object):
 
     @property
     def n(self):
-        return self._n
-
-    @property
-    def d(self):
-        return self._d
+	return self._n
 
     def __add__(self, other):
         return Rational(self._n * other._d + other._n * self._d,
@@ -22,9 +18,7 @@ class Rational(object):
     def __str__(self):
         return "{}/{}".format(self._n, self._d)
 
-    @staticmethod
-    def foo():
-        return "bar"
+
 
 if __name__ == '__main__':
      
@@ -32,5 +26,6 @@ if __name__ == '__main__':
     third = Rational(1, 3)
 
     total = half + third
+    total.n
 
     print "{} + {} = {}".format(half, third, total)
