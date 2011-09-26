@@ -32,3 +32,4 @@ def traverse_levels(tree, minlevel, maxlevel):
 traverse_levels(tree, 1, 1)
 traverse_levels(tree, 2, 2)
 traverse_levels(tree, 3, 3)
+

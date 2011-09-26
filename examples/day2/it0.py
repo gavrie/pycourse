@@ -1,11 +1,15 @@
 class Foo(object):
 
+    def __init__(self):
+        print "new Foo"
+
     def __iter__(self):
         print "making iterator"
-        return self
+        return FooIter()
 
+class FooIter(object):
     def __init__(self):
-        print "new iter"
+        print "new FooIter"
         self.i = 0
 
     def next(self):
@@ -15,3 +19,4 @@ class Foo(object):
         else:
             print "done"
             raise StopIteration
+
