@@ -8,18 +8,29 @@ class Connection(object):
 
 class Closing(object):
     def __init__(self, x):
-        self.x = x
+        self._x = x
 
     def __enter__(self):
         print ">> Entering context"
+        return self._x
 
     def __exit__(self, *args):
         print ">> Leaving context"
-        self.x.close()
+        self._x.close()
 
 
 with Closing(Connection()) as myconn:
     print "Inside context"
     myconn
     
+
+
+
+
+
+
+
+
+
+
 

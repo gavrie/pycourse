@@ -11,10 +11,10 @@ def sqrt(x):
     def good_enough(guess):
         return abs(square(guess) - x) < 0.001
 
-    def improve(guess):
-        return average(guess, x / guess)
-
     def sqrt_iter(guess):
+        def improve(guess):
+            return average(guess, x / guess)
+
         return guess if good_enough(guess) \
                      else sqrt_iter(improve(guess))
 

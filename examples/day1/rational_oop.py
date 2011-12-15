@@ -18,6 +18,9 @@ class Rational(object):
     def __str__(self):
         return "{}/{}".format(self._n, self._d)
 
+    def _decimal(self):
+        return float(self._n) / self._d
+
 
 
 if __name__ == '__main__':
