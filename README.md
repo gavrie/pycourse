@@ -4,7 +4,7 @@ Python Course
 Installation
 ------------
 
-* Python 2.7: http://python.org/download/releases/2.7.2/
+* Python 2.7: http://python.org/download/releases/2.7.3/
 * IPython: http://ipython.org/download.html
 * PyWin32: http://sourceforge.net/projects/pywin32/files/pywin32/
 
@@ -36,6 +36,4 @@ gavriep@gavriep-mac: ~$
 
 *Have fun!*
 
-Ofer Koren<br>
-Eli Golovinsky<br>
-Gavrie Philipson<br>
+Gavrie Philipson
