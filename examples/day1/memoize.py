@@ -1,25 +1,33 @@
+def make_cached(func):
+    # lexical closure
 
-def memoize(func):
     cache = {}
 
-    def wrapped_func(*args):
-        print "before"
-        if args in cache:
-            result = cache[args]
+    def cached(*key):
+        if key in cache:
+            result = cache[key]
         else:
-            result = func(*args)
-            cache[args] = result
-        print "after"
+            result = func(*key)
+            cache[key] = result
         return result
 
-    return wrapped_func
+    return cached
 
-@memoize
-def foo(a,b):
-    print "Calculated:", a, b
-    return a + b
+def main():
+    @make_cached
+    def calc(a, b):
+        print "Running calc({}, {})".format(a, b)
+        return a + b
 
-print foo(1, 2)
-print foo(1, 2)
-print foo(3, 4)
-print foo(1, 2)
+    def calc2(a, b):
+        print "Running calc2({}, {})".format(a, b)
+        return a - b
+    calc2 = make_cached(calc2)
+
+    print calc(3, 4)
+    print calc(4, 5)
+    print calc(3, 4)
+
+if __name__ == '__main__':
+    main()
+

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def square(x):
     "return the square of x"
     return x * x
