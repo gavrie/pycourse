@@ -29,6 +29,22 @@ if __name__ == '__main__':
     third = Rational(1, 3)
 
     total = half + third
-    total.n
 
     print "{} + {} = {}".format(half, third, total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

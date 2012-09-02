@@ -1,6 +1,7 @@
-def make_cached(func):
-    # lexical closure
+# Website:
+# https://github.com/gavrie/pycourse
 
+def make_cached(func):
     cache = {}
 
     def cached(*key):
