@@ -7,7 +7,7 @@ def make_cached_func(func):
             print "Returning data from cache for {}".format(args)
             return cache[key]
 
-        data = func(key)
+        data = func(*key)
         cache[key] = data
         return data
 
