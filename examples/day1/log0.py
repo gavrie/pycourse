@@ -1,10 +1,18 @@
+class Counter(object):
+    def __init__(self, start=0):
+        self.count = start
+
+    def incr(self):
+        self.count += 1
+
 def log_func(func):
-    counter = [0]
+    counter = Counter()
     def wrapped_func(*args):
-        counter[0] = counter[0] + 1
-        print "Before {} (count: {})".format(func.__name__, counter[0])
+        counter.incr()
+        print "Before {}{} (count: {})".format(func.__name__, 
+                args, counter.count)
         result = func(*args)
-        print "After {}".format(func.__name__)
+        print "After (return: {}) {}".format(result, func.__name__)
         return result
     return wrapped_func
 

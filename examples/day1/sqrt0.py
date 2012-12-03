@@ -5,6 +5,10 @@ def square(x):
     return x * x
 
 def average(x, y):
+    """
+    This function calculates the average.
+    Parameters: x, y
+    """
     return (x + y) / 2
 
 def good_enough(guess, x):
@@ -16,10 +20,11 @@ def improve(guess, x):
 def sqrt_iter(guess, x):
     while not good_enough(guess, x):
         guess = improve(guess, x)
-    return guess 
+    return guess
 
 def sqrt(x):
     return sqrt_iter(1.0, x)
+
 
 
 if __name__ == '__main__':
