@@ -1,8 +1,12 @@
+import pdb
+
+# generator
+
 def count(start=0):
     value = start
     while True:
-        yield value
         value += 1
+        yield value
 
 def log_func(func):
     counter = count()

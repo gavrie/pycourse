@@ -1,7 +1,7 @@
 def log_func(func):
     counter = 0
     def wrapped_func(*args):
-        counter += 1
+        counter = counter + 1
         print ">>> Enter {}{} (count: {})".format(
                 func.__name__, args, counter)
         result = func(*args)

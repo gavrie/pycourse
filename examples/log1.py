@@ -1,9 +1,13 @@
 class Counter(object):
     def __init__(self, start=0):
-        self.count = start
+        self._count = start
 
     def increment(self):
-        self.count += 1
+        self._count += 1
+
+    @property
+    def count(self):
+        return self._count
 
 def log_func(func):
     counter = Counter()
