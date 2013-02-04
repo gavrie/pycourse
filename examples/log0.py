@@ -2,11 +2,11 @@ def log_func(func):
     counter = [0]
     def wrapped_func(*args):
         counter[0] += 1
-        print ">>> Enter {}{} (count: {})".format(
+        print ">>> Entering {}{} [call count: {}]".format(
                 func.__name__, args, counter[0])
         result = func(*args)
-        print "<<< Exit {} [return: {}]".format(
-                func.__name__, result)
+        print "<<< Exiting {}{} => {}".format(
+                func.__name__, args, result)
         print
         return result
     return wrapped_func
@@ -21,6 +21,9 @@ def myfunc(a, b):
     return a * b
 
 if __name__ == '__main__':
+    print """Write a decorator, called log_func, that has adds the following
+    behavior to a function that it decorates:
+    """
     myfunc(3, 4)
     foo()
     myfunc(5, 6)
