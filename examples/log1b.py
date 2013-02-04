@@ -1,21 +1,6 @@
 class Counter(object):
-    """
-    Counter
-    """
-    myconst = 7
-
     def __init__(self, start=0):
         self._count = start
-
-    @staticmethod
-    def foo():
-        print "foo"
-
-    def __repr__(self):
-        return "<Counter {}>".format(self._count)
-
-    def __str__(self):
-        return "Counter: {}".format(self._count)
 
     def increment(self):
         self._count += 1
@@ -23,14 +8,6 @@ class Counter(object):
     @property
     def count(self):
         return self._count
-
-    @count.setter
-    def count(self, value):
-        if value > 10:
-            raise ValueError("Too large!")
-        print "Setting value to {}".format(value)
-        self._count = value
-
 
 def log_func(func):
     counter = Counter()
@@ -59,5 +36,3 @@ if __name__ == '__main__':
     foo()
     myfunc(5, 6)
     foo()
-
-

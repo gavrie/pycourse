@@ -23,6 +23,16 @@ def myfunc(a, b):
 if __name__ == '__main__':
     print """Write a decorator, called log_func, that has adds the following
     behavior to a function that it decorates:
+
+    Usage:
+
+    @log_func
+    def myfunc(a, b):
+        print "Inside myfunc"
+        return a * b
+
+    Behavior:
+
     """
     myfunc(3, 4)
     foo()

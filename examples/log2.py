@@ -1,7 +1,3 @@
-import pdb
-
-# generator
-
 def count(start=0):
     value = start
     while True:
