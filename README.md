@@ -33,7 +33,7 @@ The easiest method is to install ActivePython with PyPM.
 The 64-bit version is known to be problematic.*
 
 * Install ActivePython from <http://www.activestate.com/activepython/downloads>
-* Open Windows command prompt, and then:
+* Open the Windows command prompt, and then:
 
 <pre>
 pypm install pyreadline
@@ -41,15 +41,14 @@ pypm install ipython
 pypm install pytest
 </pre>
 
-* Test if it works by running IPython from the menu.
+* Test if it works by running IPython from the Windows menu or from the PyPM command prompt.
 
 
 Editors / IDEs
 --------------
 
 * Most standard programmer's editors support Python out of the box: Vim, Emacs, Sublime etc.
-* Eclipse supports Python with the [PyDev](http://pydev.org/) plugin. 
-* You can also use the pre-packaged [Aptana Studio](http://www.aptana.com/) environment if you don't have Eclipse installed yet.
+* Eclipse supports Python with the [PyDev](http://pydev.org/) plugin. You can also use the pre-packaged [Aptana Studio](http://www.aptana.com/) environment if you don't have Eclipse installed yet.
 
 Resources
 ---------
