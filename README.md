@@ -11,14 +11,14 @@ We will be using Python 2.7 along with these tools:
 Ubuntu Users
 ------------
 
-1. Install the Python prerequisites:
+* Install the Python prerequisites:
 
 <pre>
 sudo apt-get install python-pip
 sudo pip install ipython pytest
 </pre>
 
-1. Test if it works:
+* Test if it works:
 
 <pre>
 ipython
@@ -32,8 +32,8 @@ The easiest method is to install ActivePython with PyPM.
 *Note: Even if you have a 64-bit version of Windows, please install the 32-bit version of ActivePython. 
 The 64-bit version is known to be problematic.*
 
-1. Install ActivePython from <http://www.activestate.com/activepython/downloads>
-1. Open Windows command prompt, and then:
+* Install ActivePython from <http://www.activestate.com/activepython/downloads>
+* Open Windows command prompt, and then:
 
 <pre>
 pypm install pyreadline
@@ -41,7 +41,7 @@ pypm install ipython
 pypm install pytest
 </pre>
 
-1. Test if it works by running IPython from the menu.
+* Test if it works by running IPython from the menu.
 
 
 Editors / IDEs
