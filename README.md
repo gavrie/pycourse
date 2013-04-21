@@ -13,12 +13,16 @@ Ubuntu Users
 
 1. Install the Python prerequisites:
 
-    sudo apt-get install python-pip
-    sudo pip install ipython pytest
+<pre>
+sudo apt-get install python-pip
+sudo pip install ipython pytest
+</pre>
 
 1. Test if it works:
 
-    ipython
+<pre>
+ipython
+</pre>
 
 Windows Users
 -------------
@@ -31,9 +35,11 @@ The 64-bit version is known to be problematic.*
 1. Install ActivePython from <http://www.activestate.com/activepython/downloads>
 1. Open Windows command prompt, and then:
 
-    pypm install pyreadline
-    pypm install ipython
-    pypm install pytest
+<pre>
+pypm install pyreadline
+pypm install ipython
+pypm install pytest
+</pre>
 
 1. Test if it works by running IPython from the menu.
 
