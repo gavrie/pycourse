@@ -61,8 +61,9 @@ Resources
 Configuring Tab Completion
 --------------------------
 
+To get tab completion to work in the regular Python interactive shell,
+add the following lines to the file `~/.pythonrc.py` (create it first if it doesn't exist):
 <pre>
-gavriep@gavriep-mac: -$ cat -/.pythonrc.py
 try:
     import readline
 except ImportError:
@@ -70,10 +71,13 @@ except ImportError:
 else:
     import rlcompleter
     readline.parse_and_bind("tab: complete")
-gavriep@gavriep-mac: -$ echo $PYTHONSTARTUP
-/Users/gavriep/.pythonrc.py
-gavriep@gavriep-mac: -$
 </pre>
+
+In addition, add the following line to your `~/.bashrc` file:
+<pre>
+export PYTHONSTARTUP=~/.pythonrc.py
+</pre>
+
 
 
 *Have fun!*
