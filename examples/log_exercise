@@ -1,0 +1,15 @@
+>>> Enter myfunc(3, 4) (count: 1)
+Inside myfunc
+<<< Exit myfunc [return: 12]
+
+>>> Enter foo() (count: 1)
+Inside foo
+<<< Exit foo [return: None]
+
+>>> Enter myfunc(5, 6) (count: 2)
+Inside myfunc
+<<< Exit myfunc [return: 30]
+
+>>> Enter foo() (count: 2)
+Inside foo
+<<< Exit foo [return: None]
