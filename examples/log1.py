@@ -1,4 +1,9 @@
-class Counter(object):
+class BaseCounter(object):
+
+    def __init__(self):
+        raise NotImplementedError
+
+class Counter(BaseCounter):
     """
     Counter
     """

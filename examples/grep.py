@@ -3,11 +3,6 @@ import fileinput
 import re
 import sys
 
-#def log(msg):
-#    print msg
-#import pdb
-#pdb.set_trace()
-
 regex = sys.argv.pop(1)
 
 for line in fileinput.input():

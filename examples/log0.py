@@ -1,9 +1,28 @@
+class Counter(object):
+    """
+    This is my counter.
+    """
+
+    def __init__(self):
+        """
+        Initialize the class.
+        """
+        self._value = 0
+
+    def increment(self):
+        self._value += 1
+
+    @property
+    def value(self):
+        return self._value
+
+
 def log_func(func):
-    counter = [0]
+    counter = Counter()
     def wrapped_func(*args):
-        counter[0] += 1
+        counter.increment()
         print ">>> Entering {}{} [call count: {}]".format(
-                func.__name__, args, counter[0])
+                func.__name__, args, counter.value)
         result = func(*args)
         print "<<< Exiting {}{} => {}".format(
                 func.__name__, args, result)
