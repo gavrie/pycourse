@@ -36,9 +36,9 @@ The 64-bit version is known to be problematic.*
 * Open the Windows command prompt, and then:
 
 <pre>
-pypm install pyreadline
-pypm install ipython
-pypm install pytest
+pypm -g install pyreadline
+pypm -g install ipython
+pypm -g install pytest
 </pre>
 
 * Test if it works by running IPython from the Windows menu or from the PyPM command prompt.
