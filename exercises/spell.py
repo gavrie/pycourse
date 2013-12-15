@@ -1,15 +1,13 @@
-#!/usr/bin/env python
 import sys
 import re
 
 def main():
     words = set()
 
-    words_file = open("words")
-    for line in words_file:
-        word = line.strip()
-        words.add(word)
-    words_file.close()
+    with open("words") as words_file:
+        for line in words_file:
+            word = line.strip()
+            words.add(word)
 
     for line in sys.stdin:
         pass
@@ -21,5 +19,5 @@ def split_line(line):
 def strip_punctuation(word):
     return re.sub("[.\"!;?\-,'\[\]()]", "", word)
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

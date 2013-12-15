@@ -1,5 +1,5 @@
 def fizzbuzz():
-    for i in xrange(101):
+    for i in range(1, 101):
         print calc_fizzbuzz(i)
 
 def calc_fizzbuzz(i):
@@ -13,4 +13,8 @@ def calc_fizzbuzz(i):
         output += str(i)
     return output
 
-fizzbuzz()
+# fizzbuzz()
+print calc_fizzbuzz(2)
+print calc_fizzbuzz(3)
+print calc_fizzbuzz(5)
+print calc_fizzbuzz(15)

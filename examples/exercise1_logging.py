@@ -2,26 +2,26 @@ def log(...):
     ...
 
 @log
-def sum(a, b):
+def mysum(a, b):
     return a + b
 
-sum(3, 4)
-sum(1, 2)
+mysum(3, 4)
+mysum(1, 2)
 
 
 """
 
 Output:
 
->> calling sum(3, 4)
+>> calling mysum(3, 4)
 << return 7
->> calling sum(1, 2)
+>> calling mysum(1, 2)
 << return 3
 
 Advanced output:
 
->> calling sum(3, 4) [1 time]
+>> calling mysum(3, 4) [1 time]
 << return 7
->> calling sum(1, 2) [2 times]
+>> calling mysum(1, 2) [2 times]
 << return 3
 

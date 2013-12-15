@@ -40,8 +40,9 @@ def myfunc(a, b):
     return a * b
 
 if __name__ == '__main__':
-    print """Write a decorator, called log_func, that has adds the following
-    behavior to a function that it decorates:
+    print """Write a decorator, called log_func, that
+    adds the following behavior to a function that it
+    decorates:
 
     Usage:
 
@@ -57,3 +58,6 @@ if __name__ == '__main__':
     foo()
     myfunc(5, 6)
     foo()
+
+
+
