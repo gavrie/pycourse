@@ -12,6 +12,8 @@ To create your solution, you need to:
     2. Write a function named 'calc_fizzbuzz' that works according to the tests.
     3. Run the test with the command 'py.test test_fizzbuzz.py'
     4. Change your code and repeat until the tests pass!
+    5. Ensure your programs prints the values from 1 to 100 correctly,
+       by running 'python fizzbuzz.py' and looking at the output.
 """
 from fizzbuzz import calc_fizzbuzz
 
