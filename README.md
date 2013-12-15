@@ -53,7 +53,9 @@ Editors / IDEs
 Resources
 ---------
 
+* Python booklet in Hebrew: http://cyber.org.il/python/python.pdf
 * Python Documentation: http://docs.python.org/
+* Python Tutorial: http://docs.python.org/2/tutorial/index.html
 * Python Package Index (PyPI): http://pypi.python.org/pypi
 * Python static analysis tools: pyflakes (simple), pylint, pychecker
 
