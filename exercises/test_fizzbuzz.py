@@ -6,6 +6,12 @@ But for multiples of three print "Fizz" instead of the number
 and for the multiples of five print "Buzz".
 For numbers which are multiples of both three and five,
 print "FizzBuzz".
+
+To create your solution, you need to:
+    1. Create a module named 'fizzbuzz.py'
+    2. Write a function named 'calc_fizzbuzz' that works according to the tests.
+    3. Run the test with the command 'py.test test_fizzbuzz.py'
+    4. Change your code and repeat until the tests pass!
 """
 from fizzbuzz import calc_fizzbuzz
 
