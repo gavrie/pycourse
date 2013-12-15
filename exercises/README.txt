@@ -1,1 +1,0 @@
-/usr/share/vim/vim73/tutor/README.txt
