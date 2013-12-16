@@ -1,22 +1,25 @@
-def make_cached_func(func):
+def make_cached(func):
     cache = {}
 
-    def lookup_or_calculate(a, b):
-        key = (a, b)
-        if key in cache:
-            return cache[key]
-        else:
-            print "Result not found for %s, calculating" % (key,)
-            result = func(a, b)
-            cache[key] = result
-            return result
+    def cached_func(*args):
+        key = args
+        if key not in cache:
+            cache[key] = func(*args)
+        return cache[key]
 
-    return lookup_or_calculate
+    return cached_func
 
-@make_cached_func
-def add(a, b):
+@make_cached
+def calc(a, b):
+    print "Running calc({}, {})".format(a, b)
     return a + b
 
-if __name__ == '__main__':
-    print add(3,4)
-    print add(3,4)
+
+def another_calc(a, b):
+    pass
+
+another_calc = make_cached(another_calc)
+
+
+
+
