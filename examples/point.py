@@ -13,7 +13,7 @@ class Point(object):
         return "<Point({}, {})>".format(self.x, self.y)
 
     def distance(self, other):
-        return sqrt((self.x-other.x)**2 + (self.y-other.y)**2)
+        return sqrt((self.x - other.x)**2 + (self.y - other.y)**2)
 
     def __sub__(self, other):
         return self.distance(other)
