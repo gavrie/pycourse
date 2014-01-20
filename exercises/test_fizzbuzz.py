@@ -7,8 +7,6 @@ and for the multiples of five print "Buzz".
 For numbers which are multiples of both three and five,
 print "FizzBuzz".
 
-Online environment: http://repl.it/Nac/1
-
 To create your solution, you need to:
 
     1. Create a module named 'fizzbuzz.py'
