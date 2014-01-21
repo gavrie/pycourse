@@ -1,0 +1,27 @@
+Write a decorator, called log_func, that logs all calls to functions
+that it decorates.
+
+Usage:
+
+    @log_func
+    def myfunc(a, b):
+        print "Inside myfunc"
+        return a * b
+
+Behavior:
+
+>>> Entering myfunc(3, 4) [call count: 1]
+Inside myfunc
+<<< Exiting myfunc(3, 4) => 12
+
+>>> Entering foo() [call count: 1]
+Inside foo
+<<< Exiting foo() => None
+
+>>> Entering myfunc(5, 6) [call count: 2]
+Inside myfunc
+<<< Exiting myfunc(5, 6) => 30
+
+>>> Entering foo() [call count: 2]
+Inside foo
+<<< Exiting foo() => None
