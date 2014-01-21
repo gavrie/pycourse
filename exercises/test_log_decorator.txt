@@ -1,6 +1,8 @@
 Write a decorator, called log_func, that logs all calls to functions
 that it decorates.
 
+Please refer to the example from the lesson, in examples/memoize1.py.
+
 Usage:
 
     @log_func
