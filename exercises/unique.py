@@ -4,11 +4,14 @@
 """
 
 def unique(s):
-    pass
+   d = set()
+   for letter in s:
+       if letter in d:
+           return False
+       d.add(letter)
+   return True
 
 
 def test_unique():
     assert unique("house")
     assert not unique("direction")
-
-test_unique()
