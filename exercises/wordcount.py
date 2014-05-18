@@ -5,7 +5,7 @@ in its input, similar to the Unix "wc" command.
 Example output when run on the contents of this file:
 
     $ python word_count.py test_word_count.py
-    29 lines
-    86 words
-    635 characters
+    11 lines
+    43 words
+    272 characters
 """
