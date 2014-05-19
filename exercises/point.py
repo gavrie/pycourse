@@ -1,33 +1,33 @@
 import math
 
-def make_point(x, y):
-    """
-    Create a point with the provided x, y coordinates.
-    """
-    return (x, y)
+class Point(object):
+    def __init__(self, x, y):
+        self.x, self.y = x, y
 
-def print_point(point):
-    """
-    Print the point.
-    """
-    x, y = point
-    print "Point {}, {}".format(x, y)
+    def __str__(self):
+        return "({}, {})".format(self.x, self.y)
 
-def distance(point1, point2):
-    """
-    Return the distance between the two provided points.
-    """
-    x1, y1 = point1
-    x2, y2 = point2
+    def __repr__(self):
+        return "<Point({}, {})>".format(self.x, self.y)
 
-    return math.sqrt((x1-x2)**2 + (y1-y2)**2)
+    def __sub__(self, other):
+        return math.sqrt((self.x-other.x)**2 +
+                         (self.y-other.y)**2)
 
-def equals(point1, point2):
-    """
-    Returns True if the points are equal to within epsilon, False otherwise.
-    """
-    epsilon = 0.00001
-    return distance(point1, point2) < epsilon
+    def __eq__(self, other):
+        epsilon = 0.00001
+        return self - other < epsilon
+
+if __name__ == "__main__":
+    p1 = Point(0, 0)
+    p2 = Point(3, 4)
+    p3 = Point(3, 4)
+
+    assert p3 == p2
+    print p1 - p2
+    print repr(p1)
+    print p2
+
 
 
 
