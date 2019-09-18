@@ -6,7 +6,7 @@ def main():
     it = iter(MY_LIST)
     while True:
         try:
-            item = it.next()
+            item = next(it)
         except Exception as e:
             break
         else:

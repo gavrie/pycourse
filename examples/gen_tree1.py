@@ -18,8 +18,8 @@ tree = ["chapter 1",
 def traverse(tree):
     if tree:
         for node in tree:
-            if isinstance(node, basestring):
-                print node
+            if isinstance(node, str):
+                print(node)
             else:
                 traverse(node)
 
